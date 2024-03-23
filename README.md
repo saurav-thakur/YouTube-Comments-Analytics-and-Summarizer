@@ -5,7 +5,11 @@ This project analyzes the youtube video provided by user and perform tasks like
  - classifies hate speech if present in the video,
  - summarizes the comments so that the user don't have to go through the whole video to understand the video.
 
-# How to run this project
+# Run this project locally
+
+```
+bash setup.sh
+```
 
 
 # Project Pipeline
