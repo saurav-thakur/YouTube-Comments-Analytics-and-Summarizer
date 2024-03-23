@@ -48,7 +48,7 @@ list_of_files = [
     f"{project_name}/ml/model.py",
 
     # additional files
-    "setup.py",
+    "__init__.py" # to make python package
     "app.py",
     "demo.py",
     "requirements.txt",

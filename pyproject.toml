@@ -1,5 +1,6 @@
 [tool.poetry]
 name = "youtube-comments-analytics-and-summarizer"
+packages = [{ include = "youtube_analytics"},]
 version = "0.1.0"
 description = ""
 authors = ["Saurav Thakur <sauravthakur1341@gmail.com>"]
