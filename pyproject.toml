@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "youtube-comments-analytics-and-summarizer"
+version = "0.1.0"
+description = ""
+authors = ["Saurav Thakur <sauravthakur1341@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.1"
+numpy = "^1.26.4"
+scikit-learn = "^1.4.1.post1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
