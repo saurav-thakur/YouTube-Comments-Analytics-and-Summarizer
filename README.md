@@ -11,6 +11,11 @@ This project analyzes the youtube video provided by user and perform tasks like
 bash setup.sh
 ```
 
+**To install Anything Via Poetry Run**
+
+```
+poetry add yourPackageName
+```
 
 # Project Pipeline
 

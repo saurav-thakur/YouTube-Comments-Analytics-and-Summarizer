@@ -47,6 +47,9 @@ list_of_files = [
     f"{project_name}/ml/__init__.py",
     f"{project_name}/ml/model.py",
 
+    # folder for notebook experiments
+    "notebooks/01_exploring_data.ipynb",
+
     # additional files
     "__init__.py" # to make python package
     "app.py",
