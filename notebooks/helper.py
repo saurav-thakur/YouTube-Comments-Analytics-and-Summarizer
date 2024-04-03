@@ -6,20 +6,35 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import nltk
 from nltk.stem import WordNetLemmatizer
-
-nltk.download('punkt')
-nltk.download('wordnet')
+from textblob import TextBlob
+# nltk.download('punkt')
+# nltk.download('wordnet')
 stop_words = set(stopwords.words('english'))
 wordnet_lemmatizer = WordNetLemmatizer()
+
+
+def remove_retweets_rt(text):
+    rt_pattern = re.compile(r'RT ')
+    rt_removed = rt_pattern.sub("",text)
+    return rt_removed
+
+def remove_emojis(text):
+    emoji_pattern = re.compile("&[!@#$%^&*0-9a-zA-Z]+;")
+    emoji_removed = emoji_pattern.sub("",text)
+    return emoji_removed
+
+def remove_html_links(text):
+    html_pattern = re.compile("https?:\/\/.*?[\s+]")
+    html_removed = html_pattern.sub("",text)
+    return html_removed
+
+def correct_spelling_mistakes(text):
+    text_blob = TextBlob(text)
+    return str(text_blob.correct())
 
 def remove_punctuations(text):
     text_punc = "".join([i for i in text if i not in string.punctuation])
     return text_punc
-
-def remove_urls(text):
-    url_pattern = re.compile(r'https?://\S+|www\.\S+')
-    urls_removed = url_pattern.sub("",text)
-    return urls_removed
 
 def remove_usernames(text):
     pattern = re.compile(r'@[a-zA-Z0-9_-]+')
