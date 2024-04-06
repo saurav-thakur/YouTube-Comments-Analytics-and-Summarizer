@@ -18,7 +18,7 @@ list_of_files = [
 
     # configuration
     f"{project_name}/configuration/__init__.py",
-    f"{project_name}/configuration/s3_operations.py",
+    f"{project_name}/configuration/azure_blob_operations.py",
     
     # constants
     f"{project_name}/constants/__init__.py",
@@ -57,6 +57,7 @@ list_of_files = [
     "requirements.txt",
     "Dockerfile",
     ".dockerignore",
+    ".env",
 ]
 
 
