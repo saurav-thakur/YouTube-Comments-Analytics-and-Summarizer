@@ -19,6 +19,7 @@ textblob = "^0.18.0.post0"
 xgboost = "^2.0.3"
 python-dotenv = "^1.0.1"
 azure-storage-blob = "^12.19.1"
+google-api-python-client = "^2.125.0"
 
 
 [build-system]
